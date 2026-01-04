@@ -37,7 +37,7 @@ function getPagesConfig() {
       batteryWebHook: getEnvironmentVariable("HA_BATTERY_WEBHOOK", suffix) || null,
       saturation: getEnvironmentVariable("SATURATION", suffix) || 1,
       contrast: getEnvironmentVariable("CONTRAST", suffix) || 1,
-      negate : getEnvironmentVariable("NEGATE", suffix) || false,
+      negate : getEnvironmentVariable("NEGATE", suffix) === "true" || false,
     });
   }
   return pages;
