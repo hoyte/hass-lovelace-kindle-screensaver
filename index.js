@@ -318,7 +318,8 @@ function convertImageToKindleCompatiblePngAsync(
       gmInstance = gmInstance.quality(100);
     }
     if (pageConfig.negate){
-      gmInstance = gmInstance.negate();
+      console.log("Negate Image...");
+      gmInstance = gmInstance.negative();
     }
     
     gmInstance.write(outputPath, (err) => {
