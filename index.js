@@ -317,6 +317,9 @@ function convertImageToKindleCompatiblePngAsync(
     if (pageConfig.imageFormat !== 'bmp') {
       gmInstance = gmInstance.quality(100);
     }
+    if (pageConfig.negate){
+      gmInstance = gmInstance.negate();
+    }
     
     gmInstance.write(outputPath, (err) => {
       if (err) {

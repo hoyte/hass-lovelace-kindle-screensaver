@@ -20,6 +20,7 @@ export COLOR_MODE=$(bashio::config 'COLOR_MODE')
 export REMOVE_GAMMA=$(bashio::config 'REMOVE_GAMMA')
 export PREFERS_COLOR_SCHEME=$(bashio::config 'PREFERS_COLOR_SCHEME')
 export HA_BATTERY_WEBHOOK=$(bashio::config 'HA_BATTERY_WEBHOOK')
+export NEGATE=$(bashio::config 'NEGATE')
 
 bashio::log.info "Loading additional environment variables..."
 
